@@ -1,0 +1,186 @@
+/* =======================================================================
+Template Name: Dil Hospital
+Author:  SmartEye Adminpanel
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for web template
+======================================================================= */
+/* ===================================== Import Less ================================== */
+@font-face {
+  font-family: 'mouse-300';
+  src: url("../fonts/PT_Sans-Web-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'mouse-500';
+  src: url("../fonts/PT_Sans-Web-Bold.ttf") format("truetype"); }
+/* ===================================== Basic CSS ================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444; }
+
+a:hover {
+  color: #444; }
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.cp {
+  cursor: pointer; }
+
+html, body {
+  height: 100%; }
+
+p {
+  margin-bottom: 0px;
+  width: 100%; }
+
+.no-padding {
+  padding: 0px; }
+
+.no-margin {
+  margin: 0px; }
+
+.hid {
+  display: none; }
+
+.top-mar {
+  margin-top: 15px; }
+
+.h-100 {
+  height: 100%; }
+
+::placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: .5 !important; }
+
+.container-fluid {
+  padding: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+strong {
+  font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+body {
+  background-color: #f7f7ff !important;
+  font-family: "mouse-300", Arial, Helvetica, sans-serif;
+  color: #6A6A6A; }
+
+.session-title {
+  padding: 30px;
+  margin: 0px; }
+  .session-title h2 {
+    width: 100%;
+    text-align: center; }
+  .session-title p {
+    max-width: 850px;
+    text-align: center;
+    float: none;
+    margin: auto; }
+  .session-title span {
+    float: right;
+    font-style: italic; }
+
+
+
+.btn-success {
+  background-color: #00ab9f;
+  border-color: #00ab9f; }
+  .btn-success:hover {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important; }
+  .btn-success:active {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important; }
+  .btn-success:focus {
+    background-color: #00ab9f !important;
+    border-color: #00ab9f !important;
+    box-shadow: none !important; }
+
+.btn-info {
+  background-color: #00a8df;
+  border-color: #00a8df; }
+  .btn-info:hover {
+    background-color: #00a8df !important;
+    border-color: #00a8df !important; }
+  .btn-info:active {
+    background-color: #00a8df !important;
+    border-color: #00a8df !important; }
+  .btn-info:focus {
+    background-color: #00a8df !important;
+    border-color: #00a8df !important;
+    box-shadow: none !important; }
+
+.btn {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px; }
+
+
+
+.btn-light {
+  background-color: #FFF;
+  color: #3F3F3F; }
+
+
+
+
+
+
+
+
+
+
+/* ===================================== Session Type CSS ================================== */
+.sesion-type {
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .sesion-type {
+      padding: 30px 10px; } }
+  .sesion-type .single-sess {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    background-color: #FFF;
+    margin-bottom: 30px; }
+    .sesion-type .single-sess img {
+      width: 100%; }
+    .sesion-type .single-sess p {
+      padding: 10px;
+      font-family: "mouse-500", Arial, Helvetica, sans-serif;
+      border-radius: 5px;
+      text-align: center; }
+  .sesion-type .sess-ok {
+    padding: 57px 30px;
+    text-align: center; }
+
+
+
+
+

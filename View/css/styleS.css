@@ -1,0 +1,161 @@
+/* =======================================================================
+Template Name: Dil Hospital
+Author:  SmartEye Adminpanel
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for web template
+======================================================================= */
+/* ===================================== Import Less ================================== */
+
+
+/* ===================================== Session Type CSS ================================== */
+.sesion-type {
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .sesion-type {
+      padding: 30px 10px; } }
+  .sesion-type .single-sess {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    background-color: #FFF;
+    margin-bottom: 30px; }
+    .sesion-type .single-sess img {
+      width: 100%; }
+    .sesion-type .single-sess p {
+      padding: 10px;
+      font-family: "mouse-500", Arial, Helvetica, sans-serif;
+      border-radius: 5px;
+      text-align: center; }
+  .sesion-type .sess-ok {
+    padding: 57px 30px;
+    text-align: center; }
+
+/* ===================================== Fooer CSS ================================== */
+.footer {
+  padding: 50px;
+  padding-bottom: 0px;
+  background-color: #444;
+  color: #FFF; }
+  @media screen and (max-width: 940px) {
+    .footer {
+      padding: 30px 10px; } }
+  .footer h2 {
+    font-size: 26px;
+    margin-top: 10px; }
+  .footer p {
+    text-align: justify;
+    text-indent: 20px; }
+  .footer .link-list li {
+    padding: 10px;
+    border-bottom: 1px solid #6C6C6C; }
+    .footer .link-list li a {
+      color: #FFF; }
+    .footer .link-list li i {
+      float: right; }
+  .footer .map-img {
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 20px; }
+
+.copy {
+  padding: 20px;
+  background-color: #2E2E2E;
+  color: #FFF; }
+  .copy a {
+    color: #FFF; }
+  .copy span {
+    float: right; }
+    .copy span i {
+      margin-right: 20px; }
+    @media screen and (max-width: 777px) {
+      .copy span {
+        display: none; } }
+
+/* ===================================== About Us Style  ================================== */
+.about-us {
+  padding: 50px;
+  background-color: #FFF; }
+  @media screen and (max-width: 940px) {
+    .about-us {
+      padding: 30px 10px; } }
+  @media screen and (max-width: 1199px) {
+    .about-us .container {
+      max-width: 100%; } }
+  .about-us img {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    @media screen and (max-width: 767px) {
+      .about-us img {
+        margin-bottom: 30px; } }
+  .about-us h2 {
+    font-size: 22px; }
+  .about-us p {
+    text-align: justify;
+    text-indent: 20px; }
+
+/* ===================================== Gallery Style  ================================== */
+.gallery-filter {
+  width: 100%;
+  text-align: center; }
+  .gallery-filter .btn {
+    background-color: #FFF; }
+
+.gallery {
+  padding: 30px;
+  background-color: #FFF; }
+
+.gallery-title {
+  font-size: 36px;
+  color: #00ab9f;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px; }
+
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #00ab9f; }
+
+.filter-button {
+  font-size: 18px;
+  border: 1px solid #00ab9f;
+  border-radius: 5px;
+  text-align: center;
+  color: #00ab9f;
+  margin-bottom: 30px; }
+
+.filter-button:hover {
+  font-size: 18px;
+  border: 1px solid #00ab9f;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00ab9f; }
+
+.btn-default:active .filter-button:active {
+  background-color: #a5238e;
+  color: white; }
+
+.port-image {
+  width: 100%; }
+
+.gallery_product {
+  margin-bottom: 30px; }
+
+.contact-rooo {
+  padding: 50px;
+  background-color: #FFF; }
+  @media screen and (max-width: 940px) {
+    .contact-rooo {
+      padding: 30px 10px; } }
+
+.pt-00 {
+  padding-top: 0px; }
+
+/*# sourceMappingURL=style.css.map */

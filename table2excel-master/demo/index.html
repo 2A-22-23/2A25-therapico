@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>table2excel | rusty1s</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <script src="../dist/table2excel.js"></script>
+  </head>
+
+  <body>
+
+    <button id="export">Export to excel</button>
+
+    <script>
+      var table2excel = new Table2Excel();
+
+      document.getElementById('export').addEventListener('click', function() {
+        // Create a new HTML table
+        var table = document.createElement('table');
+        var thead = table.createTHead();
+        var tbody = table.createTBody();
+        var tfoot = table.createTFoot();
+
+        // Add table headers
+        var headers = ['CIN du patient', 'CIN du médecin', 'Date de consultation', 'Symptômes', 'Diagnostic'];
+        var headerRow = thead.insertRow();
+        for (var i = 0; i < headers.length; i++) {
+          var headerCell = headerRow.insertCell(i);
+          headerCell.appendChild(document.createTextNode(headers[i]));
+        }
+
+        // Add table rows
+        <?php foreach ($list as $suivi) { ?>
+          var row = tbody.insertRow();
+          var cin_sCell = row.insertCell(0);
+          cin_sCell.appendChild(document.createTextNode('<?php echo $suivi['cin_s']; ?>'));
+          var cin_dCell = row.insertCell(1);
+          cin_dCell.appendChild(document.createTextNode('<?php echo $suivi['cin_d']; ?>'));
+          var dateCell = row.insertCell(2);
+          dateCell.appendChild(document.createTextNode('<?php echo $suivi['date_consultation']; ?>'));
+          var symptomesCell = row.insertCell(3);
+          symptomesCell.appendChild(document.createTextNode('<?php echo $suivi['symptomes']; ?>'));
+          var diagnosticCell = row.insertCell(4);
+          diagnosticCell.appendChild(document.createTextNode('<?php echo $suivi['diagnostic']; ?>'));
+        <?php } ?>
+
+        // Add table footer
+        var footerRow = tfoot.insertRow();
+        var footerCell = footerRow.insertCell(0);
+        footerCell.colSpan = headers.length;
+        footerCell.appendChild(document.createTextNode('<?php echo count($list); ?> entries'));
+
+        // Export the table to Excel
+        table2excel.export([table]);
+      });
+    </script>
+
+  </body>
+</html>
