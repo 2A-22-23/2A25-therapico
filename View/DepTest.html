@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Therapico's Depression Test</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="all">
+<script >function test_it(entry) {
+ 
+
+    var pyt_10;
+       if (entry.value!=null && entry.value.length!=0) {
+       entry.value=""+ eval(entry.value);
+       }
+       computeForm(entry.form);
+       }
+   
+       function computeForm(form) {
+       var total=0
+       
+       for (var count=0; count<4; count++)
+       {
+       if (form.a[count].checked){
+       var total=total+parseInt(form.a[count].value);
+       }
+       }
+       
+       for (var count=0; count<4; count++)
+       {
+       if (form.b[count].checked){
+       var total=total+parseInt(form.b[count].value);
+       }
+       }
+   
+       for (var count=0; count<4; count++)
+       {
+       if (form.c[count].checked){
+       var total=total+parseInt(form.c[count].value);
+       }
+       }
+   
+       for (var count=0; count<4; count++)
+       {
+       if (form.d[count].checked){
+       var total=total+parseInt(form.d[count].value);
+       }
+       }
+   
+       for (var count=0; count<4; count++)
+       {
+       if (form.e[count].checked){
+       var total=total+parseInt(form.e[count].value);
+       }
+       }
+   
+       for (var count=0; count<4; count++)
+       {
+       if (form.f[count].checked){
+       var total=total+parseInt(form.f[count].value);
+       }
+       }
+   
+       for (var count=0; count<4; count++)
+       {
+       if (form.g[count].checked){
+       var total=total+parseInt(form.g[count].value);
+       }
+       }
+       
+       for (var count=0; count<4; count++)
+       {
+       if (form.h[count].checked){
+       var total=total+parseInt(form.h[count].value);
+       }
+       }
+       
+       for (var count=0; count<4; count++)
+       {
+       if (form.i[count].checked){
+       var total=total+parseInt(form.i[count].value);
+       }
+       }
+   
+       for (var count=0; count<4; count++)
+       {
+       if (form.j[count].checked){
+       var total=total+parseInt(form.j[count].value);
+       pyt_10 = form.j[count].value;
+       }
+       }
+       
+   
+       if (total > 12 || pyt_10 > 1){ document.write('<style> body{background-image: url("images/depression2.jpg"); }</style> <body><center><h1 > Therapico Depression Test Results </h1><br><br></center><center ><h2> Sadly You are Depressed !!!</h2><h2> <br> It is advisable to consult a doctor or psychologist. <br></h2> <h2> Book An Appointment<br></h2><div class="col-md-4 col-sm-6" > <div class="single-sess sess-ok" ><h2> <br> Start Your Session today<br><br> </h2><h2>Take the first step on your journey to feeling better.</h2><br><br> </p><a href="addrdv.php"> <img src=" images/icon/rdv.png" alt="" class="icon"></a><center></div></div></body>') }
+       else { document.write('<style> body{background-image: url("images/happy.jpg"); }</style> <body><center><h1 > Therapico Depression Test Results <br><br><br><br><br><br><br><br> Happy For You are Depression Free !!!</h1> <br> <br> <a href="DepTest.html" > <img src=" images/icon/DepBtn.png" alt="" class="icon"> </a>')}
+   
+       }</script>
+</head>
+
+<body>
+	<style>
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #9c9a9a;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #848181;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h1 {
+  color:#4CAF50;
+}
+p{
+	color:#000000;
+}
+body{
+background-image: url("images/depression2.jpg");  
+}
+</style>
+<center>
+<h1><a>Therapico's Depression Test</a></h1>
+</center>
+<center>
+<img src="images/mylogo.png" width="70" height="70">
+</center>
+			<form method="post">
+
+			<br>
+			<p class="container">I could laugh at things and see their bright side</p>
+			<br>
+
+			<label class="container">
+			<input type="radio" name="a" value="0"> As much as always<br>
+			<span class="checkmark"></span>
+		  </label>
+
+		  <label class="container">
+			<input type="radio" name="a" value="1"> Not quite the same as before
+			<br>
+			<span class="checkmark"></span>
+		  </label>
+
+		  <label class="container">
+			<input type="radio" name="a" value="2">Definitely less than before
+			<br>
+			<span class="checkmark"></span>
+		  </label>
+
+		  <label class="container">
+			<input type="radio" name="a" value="3"> I could not
+			<br>
+			<span class="checkmark"></span>
+		  </label>
+
+			<br>
+			<p class="container">I looked forward with joy to future events and affairs:</p>
+			<br>
+
+			<label class="container">
+				<input type="radio" name="b" value="0"> As much as alway<br>
+				<span class="checkmark"></span>
+		  </label>
+
+		  <label class="container">
+			<input type="radio" name="b" value="1"> Not quite the same as before
+<br>
+			<span class="checkmark"></span>
+		  </label>
+
+		  <label class="container">
+			<input type="radio" name="b" value="2">Definitely less than before
+			<br>
+			<span class="checkmark"></span>
+		  </label>
+
+			<label class="container">
+				<input type="radio" name="b" value="3"> I could not
+<br>
+				<span class="checkmark"></span>
+		  </label>
+			<br>
+			<p class="container">I felt unreasonably guilty when something went wrong:</p>
+			<br>
+			<label class="container">
+				<input type="radio" name="c" value="3"> Yes, in most cases
+
+<br>
+				<span class="checkmark"></span>
+		  </label>
+		  <label class="container">
+			<input type="radio" name="c" value="2">  Yes, in some cases
+
+<br>
+			<span class="checkmark"></span>
+		  </label>
+		  <label class="container">
+			<input type="radio" name="c" value="1">  Not so often
+
+<br>
+			<span class="checkmark"></span>
+		</label>
+
+			<label class="container">
+				<input type="radio" name="c" value="0">  No never
+
+<br>
+
+				<span class="checkmark"></span>
+		  </label>
+
+			<br>
+			
+			<p class="container">I felt worried or anxious for no particular reason:</p>
+			<br>
+			<label class="container">
+				<input type="radio" name="d" value="3"> No never
+
+<br>
+				<span class="checkmark"></span>
+		</label>
+
+				<label class="container">
+					<input type="radio" name="d" value="2"> I don't think so
+
+<br>
+					<span class="checkmark"></span>
+		</label>
+
+					<label class="container">
+						<input type="radio" name="d" value="1"> Yes, sometimes
+
+<br>
+						<span class="checkmark"></span>
+		</label>
+						<label class="container">
+							<input type="radio" name="d" value="0"> So very often
+							<br>
+							<span class="checkmark"></span>
+		</label>
+			<br>
+			<p class="container">I felt scared or panicked for no particular reason:</p>
+
+			<br>
+			<label class="container">
+				<input type="radio" name="e" value="3"> Yes, quite often
+				<br>
+				<span class="checkmark"></span>
+			</label>
+				<label class="container">
+					<input type="radio" name="e" value="2"> Yes, sometimes
+
+<br>
+					<span class="checkmark"></span>
+				</label>
+					<label class="container">
+						<input type="radio" name="e" value="1"> No, not really
+						<br>
+						<span class="checkmark"></span>
+					</label>
+						<label class="container">
+							<input type="radio" name="e" value="0"> No never
+
+<br>
+							<span class="checkmark"></span>
+						</label>
+			<br>
+			<p class="container">I was overwhelmed by various things:</p>
+
+			<br>
+			<label class="container">
+				<input type="radio" name="f" value="3"> Yes, most of the time, and I've never been able to handle them
+				<br>
+				<span class="checkmark"></span>
+						</label>
+				<label class="container">
+					<input type="radio" name="f" value="2"> Yes, sometimes I could not do as well as before<br>
+					<span class="checkmark"></span>
+						</label>
+					<label class="container">
+						<input type="radio" name="f" value="1"> No, most of the time I was doing quite well
+						<br>
+						<span class="checkmark"></span>
+						</label>
+						<label class="container">
+							<input type="radio" name="f" value="0"> No, I was doing just as well as before
+							<br>
+							<span class="checkmark"></span>
+						</label>
+							<br>
+							<p class="container">I felt so unhappy that I had difficulty sleeping:</p>
+		
+			<br>
+			<label class="container">
+				<input type="radio" name="g" value="3"> Yes, most of the time
+				<br>
+				<span class="checkmark"></span>
+			</label>
+				<label class="container">
+					<input type="radio" name="g" value="2"> Yes, sometimes
+
+<br>
+					<span class="checkmark"></span>
+				</label>
+					<label class="container">
+						<input type="radio" name="g" value="1"> Not so often
+
+<br>
+						<span class="checkmark"></span>
+					</label>
+						<label class="container">
+							<input type="radio" name="g" value="0"> No never
+
+<br>
+							<span class="checkmark"></span>
+						</label>
+			<br>
+			<p class="container">I was sad and I felt depressed:</p>
+
+			<br>
+			<label class="container">
+				<input type="radio" name="h" value="3"> Yes, most of the time
+				<br>
+				<span class="checkmark"></span>
+			</label>
+			
+				<label class="container">
+					<input type="radio" name="h" value="2"> Yes, sometimes
+
+<br>
+					<span class="checkmark"></span>
+						</label>
+
+					<label class="container">
+						<input type="radio" name="h" value="1"> Not so often
+
+<br>
+						<span class="checkmark"></span>
+						</label>
+
+						<label class="container">
+							<input type="radio" name="h" value="0"> No never
+
+<br>
+							<span class="checkmark"></span>
+						</label>
+			<br>
+			<p class="container">I felt so unhappy that I burst into tears:</p>
+
+			<br>
+			<label class="container">
+				<input type="radio" name="i" value="3"> Yes, most of the time<br>
+				<span class="checkmark"></span>
+						</label>
+				<label class="container">
+				<input type="radio" name="i" value="2"> Yes, sometimes
+
+<br>
+				<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="i" value="1"> Not so often
+
+<br>
+					<span class="checkmark"></span>
+				</label>
+
+			<label class="container">
+					<input type="radio" name="i" value="0"> No never
+
+<br>
+					<span class="checkmark"></span>
+				</label>
+			<br>
+			
+			<p class="container">I thought about hurting myself:</p>
+			<br>
+			<label class="container">
+				<input type="radio" name="j" value="3">  Yes, quite often<br>
+				<span class="checkmark"></span>
+				</label>
+
+			<label class="container">
+				<input type="radio" name="j" value="2">  Sometimes<br>
+				<span class="checkmark"></span>
+				</label>
+
+			<label class="container">
+				<input type="radio" name="j" value="1"> Practically never
+				<br>
+				<span class="checkmark"></span>
+			</label>
+			
+			<label class="container">
+				<input type="radio" name="j" value="1"> Never<br>
+				<span class="checkmark"></span>
+			</label>
+			<br>
+			<center>
+			<input TYPE="button" VALUE="Check the result " onClick=computeForm(this.form) class="button"><br><br></center>
+</form>
+<br> 
+</body>

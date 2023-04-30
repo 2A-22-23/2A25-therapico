@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <style>
+        .appointment-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .appointment-form h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .appointment-form label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .appointment-form input,
+        .appointment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .appointment-form textarea {
+            height: 120px;
+        }
+
+        .appointment-form .btn-submit {
+            background-color: #00ccbb;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="appointment-form">
+        <h2 style="color:rgb(6, 255, 226);">Prendre un rendez-vous en ligne</h2>
+        <form>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="name">Prenom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+            
+            <label for="name">Age:</label>
+            <input type="text" id="age" name="age" required>
+            <label for="Sexe">Sexe:</label><br>
+             <select id="Sexe" name="Sexe">
+              <option value="Feminin">Masculin</option>
+              <option value="Masculin">Feminin</option>
+             </select>
+
+            <label for="name">Profession:</label>
+            <input type="text" id="Profession" name="Profession" required>
+
+            <label for="name">Type de rendez-vous :</label>
+            <input type="text" id="rendez-vous" name="rendez-vous" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Heure :</label>
+            <input type="time" id="time" name="time" required>
+            
+
+
+
+
+            <!--  <a href="paiment.html">
+                  <input type="button" class="btn-submit" data-wow-delay="0.39s"  value="payer"> </a>
+
+
+               <button type="submit" class="btn-submit">Envoyer
+                     </button>
+                   -->
+
+            <tr>
+            <button type="submit" onclick="aa()" class="btn-submit">Validé
+            </button><br>
+            
+            <button type="submit" onclick="aa()" class="btn-submit">Annuleé
+            </button>
+            </tr>
+
+
+        </form>
+        <script>
+            const form = document.querySelector('form');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const name = document.querySelector('#name').value;
+                const email = document.querySelector('#email').value;
+                const phone = document.querySelector('#phone').value;
+                const date = document.querySelector('#date').value;
+                const time = document.querySelector('#time').value;
+                const lastname = document.querySelector('#lastname').value;
+                const Profession = document.querySelector('#profession').value;
+                const age = document.querySelector('#age').value;
+                const sexe = document.querySelector('#sexe').value;
+
+
+                
+            });
+            function aa() {
+                var dialog = confirm("Paiment en ligne ?");
+                if (dialog) {
+                    console.log("online");
+                    window.location.replace("paiment.html")
+                }
+                else {
+                    console.log("raj3ni");
+                    window.location.replace("index.html")
+                }
+            }
+        </script>
+    </div>
+
+
+</body>
+
+</html>
